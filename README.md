@@ -4,7 +4,7 @@ A new Flutter application.
 
 ## Getting Started
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Poc-Doc")
+![alt text](https://github.com/pranish-ramteke/Poc_Doc/blob/master/assets/PocDoc_bg.png "Poc-Doc")
 
 This project is a starting point for a Flutter application.
 
