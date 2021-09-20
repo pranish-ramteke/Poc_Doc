@@ -1,18 +1,15 @@
 # poc_doc
 
-A new Flutter application.
+A diagnosis and treatment suggestion, Machine learning based Flutter application.
 
 ## Getting Started
 
 ![alt text](https://github.com/pranish-ramteke/Poc_Doc/blob/master/assets/PocDoc_bg.png "Poc-Doc")
 
-This project is a starting point for a Flutter application.
+User can input symptoms and answer follow-up questions via text or speech and get a diagnosis instantly.
+Uses BioBERT for diagnosis and suggesting a treatment plan.
+Chained multiple machine learning models.
 
-A few resources to get you started if this is your first Flutter project:
+Bert is fantastic for encoding medical questions and answers, and developing robust vector representations of those questions/answers.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+We trained a fine-tuned version of our model which was initialized with Naver's bioBert. We also trained a version where the bioBert weights were frozen, and only trained the two FCNNs for the questions and answers. While we expected the fine-tuned version to work well, we were surprised at how robust later was. This suggests that bioBert has innate capabilities in being able to encode the means of medical questions and answers.
